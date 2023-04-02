@@ -1,41 +1,24 @@
-# Quasar App (quasar-crud)
 
-A Quasar Project
+# Quasar Crud
 
-## Install the dependencies
+Crud de usuários feito em Vue3 + Quasar.
+
+## Configuração de Variáveis
+
+Para rodar esse projeto, você vai precisar configurar sua API_KEY gerada no site https://gorest.co.in/consumer. Ela deve ser adicionada no arquivo `utils/http.js`
+
+    headers: {
+        Authorization: 'sua_api_key',
+        'content-type': 'application/json',
+    }
+
+
+
+## Instalação
+
+Para a instalação dentro do projeto rode os seguintes comandos
+
 ```bash
-yarn
-# or
-npm install
+  npm install
+  npx quasar dev
 ```
-
-### Start the app in development mode (hot-code reloading, error reporting, etc.)
-```bash
-quasar dev
-```
-
-
-### Lint the files
-```bash
-yarn lint
-# or
-npm run lint
-```
-
-
-### Format the files
-```bash
-yarn format
-# or
-npm run format
-```
-
-
-
-### Build the app for production
-```bash
-quasar build
-```
-
-### Customize the configuration
-See [Configuring quasar.config.js](https://v2.quasar.dev/quasar-cli-webpack/quasar-config-js).
