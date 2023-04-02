@@ -60,7 +60,7 @@
       </q-card-section>
       
       <q-card-actions align="right">
-        <q-btn flat label="Cancelar" color="negative" v-close-popup />
+        <q-btn flat label="Cancelar" color="negative" v-close-popup @click="reload()"/>
         <q-btn flat label="Salvar"   color="positive" @click="userDialog.action == 'edit' ? updateUser() : createUser()"/>
       </q-card-actions>
     </q-card>
@@ -93,11 +93,16 @@ export default defineComponent({
       }
     }
 
+    function reload(){
+      store.searchUsers(store.pagination.page ,store.filter)
+    }
+
     return {
       userDialog,
       genders,
       status, 
 
+      reload,
       createUser,
       updateUser
     }

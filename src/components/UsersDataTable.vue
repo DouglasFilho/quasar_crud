@@ -6,7 +6,8 @@
     flat
     :loading="loadingUsers"
     :columns="columns"
-    rows-per-page-label="Dados por página"
+    :rows-per-page-options="[]"
+    :rows-per-page-label="null"
     binary-state-sort
     :filter="filter"
     @request="onRequest"
