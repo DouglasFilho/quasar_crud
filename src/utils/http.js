@@ -2,7 +2,7 @@ const axios = require('axios')
 
 const axiosInstance = axios.create({
   headers: {
-    Authorization: `Bearer sua_api_key`,
+    Authorization: ` `,
     'content-type': 'application/json',
   }
 })
