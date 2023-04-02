@@ -151,7 +151,6 @@ export const usersStore = defineStore('users', {
         }
       })
     },
-
     openUserDialog(action, user) {
       this.userDialog.user = user
       this.userDialog.action = action

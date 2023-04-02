@@ -83,7 +83,9 @@ export default defineComponent({
 
     function updateUser(){
       const user = userDialog.value.user
-      store.updateUser(user)
+      if (this.$refs.nameInput.validate() && this.$refs.emailInput.validate() && this.$refs.statusInput.validate() && this.$refs.genderInput.validate()){
+        store.updateUser(user)
+      }
     }
 
     function createUser(){
